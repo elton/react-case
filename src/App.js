@@ -1,5 +1,14 @@
+import React from 'react';
+import RandomJoke from './components/container';
+import Hoc from './components/hoc';
+
 function App() {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+  return (
+    <>
+      <Hoc />
+      <RandomJoke />
+    </>
+  );
 }
 
-export default App;
+export default React.memo(App);
