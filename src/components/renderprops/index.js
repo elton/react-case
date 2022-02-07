@@ -10,11 +10,13 @@ const RenderProps = () => {
       <div className='text-center text-lg font-semibold text-neutral-700'>
         Render Props
       </div>
-      <RenderAll>{() => <h1>Hello World</h1>}</RenderAll>
-      <Login>{({ username }) => <h1>Hello {username}!</h1>}</Login>
+      <RenderAll>{() => <h1 className='text-xs'>Hello World</h1>}</RenderAll>
+      <Login>
+        {({ username }) => <h1 className='text-xs'>Hello {username}!</h1>}
+      </Login>
       <Auth
-        login={({ username }) => <h1>Hello {username}!</h1>}
-        nologin={() => <h1>Please login first.</h1>}
+        login={({ username }) => <h1 className='text-xs'>Hello {username}!</h1>}
+        nologin={() => <h1 className='text-xs'>Please login first.</h1>}
       />
     </div>
   );

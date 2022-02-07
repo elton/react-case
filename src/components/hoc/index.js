@@ -21,11 +21,11 @@ import { withLogin } from './withLogin';
 
 const Hoc = () => {
   const LoginButton = withLogin((props) => {
-    return <div>退出登录, {props.name}</div>;
+    return <div className='text-xs'>退出登录, {props.name}</div>;
   });
 
   const ShoppingCart = withLogin((props) => {
-    return <div>您的购物车: {props.name}</div>;
+    return <div className='text-xs'>您的购物车: {props.name}</div>;
   });
 
   return (
@@ -33,8 +33,8 @@ const Hoc = () => {
       <div className='text-center text-lg font-semibold text-neutral-700'>
         HoC
       </div>
-      <LoginButton name='Elton' />
-      <ShoppingCart name='Elton' />
+      <LoginButton />
+      <ShoppingCart />
     </div>
   );
 };

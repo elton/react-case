@@ -12,7 +12,7 @@ const Joke = React.memo(({ value }) => {
       </div>
       <div className='m-4 flex items-center '>
         <HiOutlineEmojiHappy className='h-16 w-16 pr-4 text-neutral-600' />
-        {value || 'loading...'}
+        <span className='text-xs'>{value || 'loading...'}</span>
       </div>
     </div>
   );
