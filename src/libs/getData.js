@@ -10,3 +10,10 @@ export const getUser = () => {
   return card;
 };
 
+export const getCount = (amount = 1) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({ data: amount });
+    }, 500);
+  });
+};

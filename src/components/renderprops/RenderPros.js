@@ -1,5 +1,5 @@
 import React from 'react';
-import { getUser } from '../../libs/getUser';
+import { getUser } from '../../libs/getData';
 
 export const RenderAll = (props) => {
   return <div>{props.children(props)}</div>;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Count from './states/Count';
+import ReduxCount from './states/ReduxCount';
 
 const State = () => {
   return (
@@ -10,6 +11,7 @@ const State = () => {
           States Management
         </h1>
         <Count />
+        <ReduxCount />
       </main>
       <nav className='m-4 border-t-[1px] pt-1 text-center text-sm text-teal-900 underline'>
         <Link to='/'>Go Home</Link>
