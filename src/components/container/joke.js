@@ -6,12 +6,12 @@ import { HiOutlineEmojiHappy } from 'react-icons/hi';
 // React.memo 利用了 shouldComponentUpdate，如果props一样，就不再渲染了
 const Joke = React.memo(({ value }) => {
   return (
-    <div className='bg-teal-100 p-2 m-4 rounded-xl'>
-      <div className='text-lg text-center text-neutral-700 font-semibold'>
+    <div className='rounded-xl bg-teal-100 p-2'>
+      <div className='text-center text-lg font-semibold text-neutral-700'>
         Container and Presentational Components
       </div>
-      <div className='flex m-4 items-center '>
-        <HiOutlineEmojiHappy className='w-16 h-16 pr-4 text-neutral-600' />
+      <div className='m-4 flex items-center '>
+        <HiOutlineEmojiHappy className='h-16 w-16 pr-4 text-neutral-600' />
         {value || 'loading...'}
       </div>
     </div>

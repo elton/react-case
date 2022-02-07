@@ -29,7 +29,10 @@ const Hoc = () => {
   });
 
   return (
-    <div>
+    <div className='rounded-xl bg-sky-100 p-2'>
+      <div className='text-center text-lg font-semibold text-neutral-700'>
+        HoC
+      </div>
       <LoginButton name='Elton' />
       <ShoppingCart name='Elton' />
     </div>

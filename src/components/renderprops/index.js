@@ -1,5 +1,5 @@
 import React from 'react';
-import RenderAll from './RenderAll';
+import { RenderAll } from './RenderAll';
 
 const RenderProps = () => {
   // 所谓 render props，指的是让 React 组件的 props 支持函数这种模式。

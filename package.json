@@ -40,6 +40,8 @@
   "devDependencies": {
     "@faker-js/faker": "^6.0.0-alpha.5",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
-    "enzyme": "^3.11.0"
+    "enzyme": "^3.11.0",
+    "prettier-plugin-tailwindcss": "^0.1.5",
+    "react-test-renderer": "^17.0.2"
   }
 }
