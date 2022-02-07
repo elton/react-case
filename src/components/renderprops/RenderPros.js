@@ -15,3 +15,14 @@ export const Login = (props) => {
     return null;
   }
 };
+
+export const Auth = (props) => {
+  const username = getUser().username;
+
+  if (username) {
+    const allProps = { username, ...props };
+    return <>{props.login(allProps)}</>;
+  } else {
+    <>{props.nologin(props)}</>;
+  }
+};
