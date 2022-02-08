@@ -39,6 +39,7 @@ const ReduxCount = () => {
           aria-label='Set increment amount'
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
+          onFocus={(e) => (e.target.value = '')}
         />
         <button
           className='rounded bg-lime-50 py-1 px-2 text-xs text-neutral-600 shadow'
