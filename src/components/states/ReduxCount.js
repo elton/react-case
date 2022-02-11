@@ -12,7 +12,6 @@ import {
 const ReduxCount = () => {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
-  console.log(dispatch);
   const [incrementAmount, setIncrementAmount] = useState('2');
   const incrementValue = Number(incrementAmount) || 0;
   return (
